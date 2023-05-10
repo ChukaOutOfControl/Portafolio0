@@ -1,0 +1,53 @@
+<!DOCTYPE html> 
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="body.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+    <script src="funciones.js"></script>
+
+    <title>Encriptador</title>
+</head>
+
+<body>
+
+    <nav>
+        <img src="Imágenes/Logo.png" alt="Logo de Alura." class="m5">
+    </nav>
+
+    <section class="area1">
+        <div class="textArea-botons">
+            <textarea class="textArea" id="textArea" cols="30" rows="10" placeholder="Ingresa tu texto a encriptar." autofocus></textarea>
+
+            <p class="exclamacion m2"><img src="Imágenes/Vector.png" alt="Ícono exclamatorio" id="exclamacionImg">Únicamente letras minúsculas y sin acentos.</p>
+
+            <div class="botones">
+                <button id="botonEncriptar" onclick="encriptar()">Encriptar</button>
+                <button id="botonDesencriptar" onclick="desencriptar()">Desencriptar</button>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="area2">
+        <img src="Imágenes/Muñeco.png" alt="Ilustración de personaje." id="ilustracion">
+
+        <div>
+            <h1 id="mensajeMutable">No se ha encontrado ningún mensaje.</h1>
+            <p>Ingresa el texto que deseas encriptar o desencriptar.</p>
+        </div>
+
+        <div>
+            <button id="copiar" onclick="clipboard()" hidden >Copiar al portapapeles</button>
+        </div>
+
+    </section>
+
+    <footer>
+        <p class="firma">Hecho por: Sebastián Chica González para curso Alura Challenge 2023</p>
+    </footer>
+</body>
+
